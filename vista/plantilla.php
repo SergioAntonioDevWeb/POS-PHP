@@ -19,12 +19,11 @@
 
 <body class="hold-transition login-page">
     <div class="login-box">
-        
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
                 <div class="login-logo">
-                    <img src="assest/dist/img/logo_login.png" alt="Logo Sistema POS" width="150">
+                    <img src="assest/dist/img/logo_login.png" alt="Logo Login" width="200">
                 </div>
 
                 <form action="" method="post">
@@ -56,10 +55,9 @@
                     </div>
 
                     <?php
-                    $login = new ControladorUsuario();
-                    $login->ctrIngresoUsuario();
+                    $login= new ControladorUsuario();
+                    $login -> ctrIngresoUsuario();
                     ?>
-
                 </form>
             </div>
             <!-- /.login-card-body -->
@@ -74,4 +72,5 @@
     <!-- AdminLTE App -->
     <script src="assest/dist/js/adminlte.min.js"></script>
 </body>
-</html>
+
+</html>               
