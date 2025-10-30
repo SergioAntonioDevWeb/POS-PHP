@@ -11,4 +11,12 @@ class ModeloUsuario {
         $stmt -> close();
         $stmt = null;
     }
+
+    static public function mdlInfoUsuarios() {
+        $stmt= Conexion::conectar() -> prepare("SELECT * FROM usuario");
+        $stmt -> execute();
+        return $stmt -> fetchAll();
+        $stmt -> close();
+        $stmt = null;
+    }
 }
